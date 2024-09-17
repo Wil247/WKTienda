@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De'W-K Tienda</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div><h1>De'W-K Tienda Electrónica</h1></div>
+        
+        <nav>
+            <ul><li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>¡Lo que quieras en electrónica, aquí lo conseguimos para ti!</h2>
+        <br><br>
+
+        <div class="media">
+            <div class="media-item">
+                <img id="imgElement1" src="Amp.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+            <div class="media-item">
+                <img id="imgElement2" src="2.4g Head-mounted Wireless Microphone Plug Play Mic.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+            <div class="media-item">
+                <img id="imgElement3" src="laptop.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+            <div class="media-item">
+                <img id="imgElement4" src="macbook.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+            <div class="media-item">
+                <img id="imgElement5" src="proyector.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+            <div class="media-item">
+                <img id="imgElement6" src="proyector1.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+            <div class="media-item">
+                <img id="imgElement6" src="proyector2.svg" alt="Imagen de ejemplo" onclick="showModal(this.src)">
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-item">
+                <video controls>
+                    <source src="v00.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <div class="media-item">
+                <video controls>
+                    <source src="v01.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <div class="media-item">
+                <iframe 
+                    width="100%" 
+                    height="500px" 
+                    src="https://www.youtube.com/embed/bKiUlsQ6uDo" 
+                    title="Video de YouTube" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para ampliar imagen -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="imgInModal" src="">
+        </div>
+    </div>
+
+    
+    <div class="footer" id="contacto">
+        <p>Para más información, llamar al <a href="tel:+18098180829" style="color: white;">(809) 818-0829</a> o contactarnos por <a href="https://wa.me/18098180829?text=Hola, necesito más información" target="_blank" style="color: white;">WhatsApp</a></p>
+    </div>
+</body>
+</html>
